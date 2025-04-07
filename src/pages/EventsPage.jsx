@@ -447,27 +447,86 @@ const EventsPage = () => {
 
             {/* Newsletter Section */}
             <section className="newsletter-sectionevent">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <motion.div 
-                className="newsletter-containerevent"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
+  <Container>
+    <Row className="justify-content-center">
+      <Col lg={8}>
+        <motion.div
+          className="newsletter-containerevent"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true }}
+        >
+          {/* Header with Icon */}
+          <motion.div
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-4"
+          >
+            <i className="bi bi-envelope-paper-heart text-white display-4 mb-3" />
+            <h3 className="fw-bold">Stay in the Loop</h3>
+            <p className="text-light lead">
+              Subscribe to get the latest event updates, exclusive offers, and community news delivered straight to your inbox.
+            </p>
+          </motion.div>
+
+          {/* Enhanced Form */}
+          <div className="newsletter-formevent">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="form-control shadow-sm"
+              aria-label="Email address for newsletter"
+              required
+            />
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Button
+                variant="primary"
+                className="px-5 py-2 subscribe-btn"
+                onClick={() => alert('Subscribed!')} // Replace with actual subscription logic
               >
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter to receive updates about upcoming events and opportunities</p>
-                <div className="newsletter-formevent">
-                  <input type="email" placeholder="Your email address" />
-                  <Button variant="primary">Subscribe</Button>
-                </div>
-              </motion.div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                Subscribe Now <i className="bi bi-arrow-right ms-2" />
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* New Features: Benefits and Social Links */}
+          <motion.div
+            className="newsletter-benefits mt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <p className="small text-light mb-3">Why subscribe?</p>
+            <ul className="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+              <li><i className="bi bi-check-circle me-2" /> Event Reminders</li>
+              <li><i className="bi bi-check-circle me-2" /> Exclusive Content</li>
+              <li><i className="bi bi-check-circle me-2" /> Community Updates</li>
+            </ul>
+          </motion.div>
+
+          <motion.div
+            className="social-links mt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <p className="small text-light mb-2">Follow us for more:</p>
+            <div className="d-flex justify-content-center gap-3">
+              <a href="#" className="social-icon"><i className="bi bi-facebook" /></a>
+              <a href="#" className="social-icon"><i className="bi bi-twitter" /></a>
+              <a href="#" className="social-icon"><i className="bi bi-instagram" /></a>
+            </div>
+          </motion.div>
+        </motion.div>
+      </Col>
+    </Row>
+  </Container>
+</section>
           </>
         )}
       </div>
