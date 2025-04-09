@@ -202,26 +202,7 @@ const EventsPage = () => {
         </motion.div>
       </div>
 
-      {/* Event Countdown (New Feature) */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        className="countdown mt-5 text-white"
-      >
-        <p className="mb-2">Next Event Starts In:</p>
-        <div className="d-flex justify-content-center gap-3">
-          <div className="countdown-item">
-            <span>38</span> Days
-          </div>
-          <div className="countdown-item">
-            <span>12</span> Hours
-          </div>
-          <div className="countdown-item">
-            <span>45</span> Minutes
-          </div>
-        </div>
-      </motion.div>
+      
     </motion.div>
   </Container>
 </motion.div>
@@ -494,34 +475,7 @@ const EventsPage = () => {
             </motion.div>
           </div>
 
-          {/* New Features: Benefits and Social Links */}
-          <motion.div
-            className="newsletter-benefits mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <p className="small text-light mb-3">Why subscribe?</p>
-            <ul className="list-unstyled d-flex flex-wrap justify-content-center gap-3">
-              <li><i className="bi bi-check-circle me-2" /> Event Reminders</li>
-              <li><i className="bi bi-check-circle me-2" /> Exclusive Content</li>
-              <li><i className="bi bi-check-circle me-2" /> Community Updates</li>
-            </ul>
-          </motion.div>
-
-          <motion.div
-            className="social-links mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <p className="small text-light mb-2">Follow us for more:</p>
-            <div className="d-flex justify-content-center gap-3">
-              <a href="#" className="social-icon"><i className="bi bi-facebook" /></a>
-              <a href="#" className="social-icon"><i className="bi bi-twitter" /></a>
-              <a href="#" className="social-icon"><i className="bi bi-instagram" /></a>
-            </div>
-          </motion.div>
+  
         </motion.div>
       </Col>
     </Row>

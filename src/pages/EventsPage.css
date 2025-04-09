@@ -443,21 +443,19 @@
   border-radius: 50px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.9);
+  height: 100%;
 }
 
 .newsletter-formevent input {
-  flex-grow: 1;
-  padding: 15px 25px;
+  flex: 1;
+  padding: 15px 20px;
   border: none;
   border-radius: 50px 0 0 50px;
   font-size: 1rem;
-  color: #333;
+  outline: none;
 }
 
-.newsletter-formevent input:focus {
-  outline: none;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-}
+
 
 .newsletter-formevent .subscribe-btn {
   padding: 15px 35px;
@@ -466,6 +464,7 @@
   background: linear-gradient(45deg, #007bff, #00b4ff);
   border: none;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .newsletter-formevent .subscribe-btn:hover {

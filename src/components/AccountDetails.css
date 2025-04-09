@@ -1,0 +1,95 @@
+/* AccountDetails.css */
+.account-details-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .account-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .account-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .account-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .account-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+  
+  .account-name-status {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .account-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+  }
+  
+  .account-status {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    width: fit-content;
+    margin-top: 5px;
+  }
+  
+  .account-status.active {
+    background-color: #e6ffe6;
+    color: #2ecc71;
+  }
+  
+  .account-status.inactive {
+    background-color: #ffe6e6;
+    color: #e74c3c;
+  }
+  
+  .account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .info-label {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .info-value {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+  }
